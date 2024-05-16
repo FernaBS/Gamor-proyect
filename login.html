@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style-login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <section class="login">
+            <img src="./assets/images/logo-principal.jpeg" alt="">
+            <form action="">
+                <p class="warning-user"></p>
+                <label for="name" class="form">
+                    <input type="text" id="name" name="name" placeholder="Username" autocomplete="off">
+                    <span class="login--user"></span>
+                </label>
+                <p class="warning-password"></p>
+                <label for="password">
+                    <input type="password" id="password" name="password" placeholder="Password" >
+                    <span class="login--password"></span>
+                </label>
+                <button class="button" type="submit">Sign in</button>
+            </form>
+        </section>
+    </main>
+    <script src="./script-login.js"></script>
+</body>
+</html>

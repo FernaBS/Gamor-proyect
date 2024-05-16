@@ -1,0 +1,689 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    /* Colores */
+    --dark-primary-theme: #222831;
+    --dark-secondary-theme: #393e46;
+    --ligth-primary-theme: #eee;
+    --ligth-secondary-theme: #fff;
+}
+
+body {
+    background-color: var(--dark-primary-theme);
+}
+
+/* Navegador */
+
+.nav-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    min-width: 320px;
+    height: 5rem;
+    margin: 5rem auto;
+}
+
+.nav-container h1 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--ligth-secondary-theme);
+}
+
+.nav-container .nav--items-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+    list-style: none;
+    color: grey;
+}
+
+.nav--items-register {
+    color: var(--ligth-secondary-theme);
+}
+
+.nav--items-container li {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+.nav-container .item--create-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12rem;
+    height: 4rem;
+    background-color: black;
+    border-radius: 2rem;
+    border: 1px solid gray;
+}
+
+.nav--item-register {
+    color: var(--ligth-secondary-theme);
+}
+
+.nav--item-register:hover {
+    opacity: 0.8;
+}
+
+.nav--item-register a:visited{
+    color: var(--ligth-secondary-theme);
+    text-decoration: none;
+}
+
+.nav--item-register a {
+    text-decoration: none;
+}
+
+.nav--item-home {
+    color: orange;
+}
+
+/* Seccion principal */ 
+
+.general-information-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    width: 90%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--dark-secondary-theme);
+}
+
+/* Seccion principal 1 */
+
+.streaming-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    grid-column: 1/2;
+}
+
+.streaming--title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.streaming--title .title--word {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    line-height: 4rem;
+    color: var(--ligth-secondary-theme);
+}
+
+.streaming--title .special-letter {
+    color: darkslateblue;
+}
+
+.streaming--title p {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: grey;
+}
+
+.streaming-container p span {
+    color: var(--ligth-secondary-theme);
+    border-bottom: 2px solid black;
+    border-color: orange;
+}
+
+.streaming--items-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 2rem;
+    list-style: none;
+    color: grey;
+}
+
+.streaming--items-container li {
+    margin-right: 2rem;
+    font-size: 1.4rem;
+}
+
+.streaming--items-container .item--create-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12rem;
+    height: 4rem;
+    background-color: grey;
+    color: var(--ligth-secondary-theme);
+    border-radius: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Seccion princpal 2 */
+.general-information-container .img-background {
+    grid-column: 2/3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background-image: url(./assets/images/fornite-general.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.general-information-container .img-background .img--title {
+    font-size: 2.1rem;
+    text-align: center;
+    color: var(--ligth-secondary-theme);
+}
+
+.general-information-container .img-background .img--subtitle {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: darkslategray;
+}
+
+.general-information-container .img-background .hour {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    width: 8rem;
+    height: 3rem;
+    font-size: 2rem;
+    background-color: var(--ligth-secondary-theme);
+    color: darkorange;
+    border-radius: 15px;
+}
+
+/* Seccion principal 3 */
+ 
+.games-container {
+    grid-column: 3/4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.games-container .games--platform-title {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--ligth-secondary-theme);
+}
+
+.games-container .games--platform-title span {
+    color: darkgray;
+}
+
+.games-container .games--platform-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    height: 5rem;
+    width: 22rem;
+    list-style: none;
+    background-color: var(--dark-primary-theme);
+    border-radius: 25px;
+}
+
+.games--platform-container li {
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: darkgrey;
+}
+
+.games--platform-container .games--platform-party {
+    border-radius: 20px;
+    background-color: darkgray;
+    color: var(--ligth-secondary-theme);
+}
+
+.games--platform-party span {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 0.5rem;
+    background-image: url(./assets/icons/party-popper.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Busqueda de juegos */
+
+.games--searching-title {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: var(--ligth-secondary-theme);
+}
+
+.games--searching-title span {
+    color: darkgray;
+}
+
+.games--searching-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    height: 25rem;
+    background-color: var(--dark-primary-theme);
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.games--searching-container #filterName {
+    padding: 1rem;
+    width: 22rem;
+    height: 4rem;
+    border: none;
+    border-bottom: thin solid var(--dark-secondary-theme);
+    border-radius: 15px 15px 0 0;
+    background-color: #222831;
+    color: var(--ligth-secondary-theme);
+}
+
+.games--searching-container #filterName:focus {
+    outline: none;
+}
+
+.games--searching-container .settings-sliders{
+    position: absolute;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    height: 20px;
+    width: 20px;
+    left: calc(75%);
+    background-image: url(assets/icons/settings-sliders.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.games--searching-container .search-button {
+    position: absolute;
+    align-self: center;
+    width: 20rem;
+    height: 4rem;
+    bottom: calc(5%);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.games--searching-list {
+    height: 150px;
+    overflow: auto;
+    scrollbar-width: none;
+    mask: linear-gradient(to top, transparent, black 30px);
+}
+
+li.active-filter span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    background-color: black;
+    border-radius: 50%;
+}
+
+li.active-filter button {
+    position: absolute;
+    left: calc(90%);
+    height: 20px;
+    width: 20px;
+    text-align: center;    
+    background-color: var(--dark-secondary-theme);
+    color: var(--ligth-secondary-theme);
+    border: none;
+    border-radius: 5px;
+}
+
+.games--searching-list li.active-filter img{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: calc(60%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+li.active-filter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.8rem;
+    color: var(--ligth-secondary-theme);
+    list-style: none;
+}
+
+.img-background div {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Seccion: Categoria de Juegos */
+
+.trending-categories {
+    margin: 5rem auto;
+    width: 90%;
+    height: auto;
+}
+
+.trending-categories--title {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.categories-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.categories-container div {
+    padding: 3rem;
+    height: auto;
+    background-color:var(--dark-secondary-theme);
+}
+
+.categories-container div .categories--number {
+    font-size: 1.8rem;
+    color: darkgrey;
+}
+
+.categories-container div .categories--name {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.categories-container span {
+    display: inline-block;
+    margin-top: 1rem;
+    height: 30px;
+    width: 30px;
+    background-image: url(./assets/icons/play-button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categories-container .img-shooter-background {
+    background-image: url(./assets/images/fortnite-shooter.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Light Mode */
+
+.nav--items-container .switch-mode {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    border-radius: 100px;
+    border:  2px solid #333;
+    background-color: var(--ligth-secondary-theme);
+}
+
+.nav--items-container .switch-mode .sun {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(./assets/icons/sun.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.nav--items-container .switch-mode .moon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(./assets/icons/moon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.nav--items-container .switch-mode::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: black;
+    border: solid thin var(--ligth-secondary-theme);
+    left: 0;
+    right: unset;
+}
+
+.nav--items-container .switch-mode.active::before {
+    right: 0;
+    left: unset;
+    border: solid thin black ;
+    background-color: var(--ligth-secondary-theme);
+}
+
+.nav--items-container .switch-mode.active {
+    background-color: var(--dark-secondary-theme);
+    border: thin solid var(--ligth-secondary-theme);
+}
+
+body.active {
+    background-color: var(--ligth-primary-theme);
+}
+
+body.active .nav-container li {
+    color: grey;
+} 
+
+body.active .nav-container .nav--item-home {
+    color: purple;
+}
+
+body.active .nav-container h1 {
+    color: black;
+}
+
+body.active .nav-container .nav--item-register a {
+    color: black;
+}
+
+body.active .nav-container .item--create-account {
+    color: var(--ligth-secondary-theme);
+}
+
+body.active .general-information-container {
+    background-color: var(--ligth-secondary-theme);
+}
+
+body.active .streaming--title .title--word {
+    color: black;
+}
+
+body.active .streaming--title .special-letter {
+    color: orange;
+}
+
+body.active .streaming-container p span {
+    color: black;
+    border-bottom: 2px solid purple;
+}
+
+body.active .streaming-container .item--create-account {
+    color: black;
+    background-color: var(--ligth-secondary-theme);
+}
+
+body.active .img-background {
+    background-image: url(./assets/images/fortnite-general-light-mode.jpeg);
+}
+
+body.active .img-background .img--subtitle {
+    color: black;
+}
+
+body.active .img-background .hour {
+    color: purple;
+}
+
+body.active .games-container p {
+    color: black;
+}
+
+body.active .games-container .games--platform-container {
+    background-color: var(--ligth-secondary-theme);
+}
+
+body.active .games--platform-party {
+    background-color: var(--ligth-primary-theme);
+    color: black;
+}
+
+body.active .games--searching-container {
+    background-color: var(--ligth-secondary-theme);
+}
+
+body.active .games--searching-container .search-button {
+    background-color: black;
+    color: var(--ligth-secondary-theme);
+}
+body.active .games--searching-container #filterName {
+    border-bottom: thin solid var(--ligth-primary-theme);
+    background-color: var(--ligth-secondary-theme);
+    color: black;
+}
+
+body.active .games--searching-container li.active-filter {
+    color: black;
+}
+
+body.active .games--searching-container li.active-filter span{
+    background-color: var(--ligth-primary-theme);
+}
+
+body.active .games--searching-container li.active-filter button{
+    background-color: var(--ligth-primary-theme);
+    color: black;
+}
+
+body.active .trending-categories--title {
+    color: darkgray;
+}
+
+body.active .categories-container div {
+    background-color: var(--ligth-secondary-theme);
+}
+
+body.active .categories--name {
+    color: black;
+}
+
+@media screen and (max-width: 680px){
+    body{
+       width: 100vh; 
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .streaming-container .streaming--title .title--word {
+        font-size: 8rem;
+        line-height: 7rem;
+    }
+
+    .streaming-container .streaming--title p {
+        font-size: 2rem;
+    }
+
+    .streaming--items-container li {
+        font-size: 2rem;
+    }
+
+    .streaming--items-container .item--create-account {
+        width: 15rem;
+    }
+   
+    .games--searching-container {
+        width: 35rem;
+        height: 30rem;
+    }
+
+    .games-container .games--platform-container {
+        width: 35rem;
+        justify-content: space-evenly;
+    }
+
+    .games--platform-container li {
+        font-size: 2rem;
+    }
+
+    .games--searching-container #filterName {
+        font-size: 1.8rem;
+        width: 35rem;
+        height: 5rem;
+    }
+
+    .games--searching-container #filterName::placeholder {
+        font-size: 1.8rem;
+    }
+
+    .games--searching-container .settings-sliders {
+        height: 25px;
+        width: 25px;
+        left: calc(80%);
+    }
+
+    .games--searching-list {
+        height: 200px;
+        overflow: auto;
+        scrollbar-width: none;
+        mask: linear-gradient(to top, transparent, black 30px);
+    }
+
+    .games--searching-container .search-button {
+        width: 33rem;
+    }
+}
